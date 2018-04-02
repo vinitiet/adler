@@ -1,8 +1,19 @@
+.nomargin {
+  margin: 0;
+}
+
+.nopadding {
+  padding: 0;
+}
+.background-white {
+  background-color: white;
+}
 #home {
-  color: white;
+    font-size: 13px;
 
   .banner {
 
+    color: white;
     p {
       margin-top: 1.5em;
     }
@@ -19,11 +30,76 @@
   }
 
   .intro {
-    padding: 100px 0 90px 0;
+    padding: 40px 0px;
     display: flex;
     color: black;
-    p {
-      font-size: 13px;
+  }
+
+  .highlights {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    .highlight {
+    display:flex;
+
+      .icon {
+        width: 60px;
+        padding: 8px;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  .overall-pers {
+    width: 100%;
+
+    .pers {
+      height: 400px;
+      width: 100%;
+      background-size: cover !important;
+    }
+    h2 {
+      padding: 40px;
+    }
+  }
+
+  .apart-options {
+    padding-bottom: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  }
+
+  .contact {
+    padding: 56px;
+    background-color: $main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .number {
+      padding-right: 40px;
+      color: white;
+      h3 {
+      margin: 0;
+
+      }
+    }
+    .contact-infos a {
+      color: white;
+      border: 2px solid rgba(255,255,255,0.8);
+      border-radius: 50px;
+      font-size: 18px;
+      padding: 16px 32px;
     }
   }
 }
