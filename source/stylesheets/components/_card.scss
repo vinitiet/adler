@@ -4,15 +4,34 @@
     background-size: cover !important;
 
     h4 {
-    margin: 0;
-    background: rgba(255, 255, 255, 0.9);
-    color: $gray;
-    padding: 8px;
-    padding-bottom: 16px;
+      margin: 0;
+      background: rgba(255, 255, 255, 0.9);
+      color: $gray;
+      padding: 8px;
+      padding-bottom: 16px;
     }
   }
 
   ul {
     margin-top: 16px;
   }
+
+  .card-img {
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .card-desc {
+    background-color: white;
+    padding: 16px;
+    padding-top: 32px;
+    h5 {
+      margin: 0;
+      font-weight: bold;
+    }
+  }
+
 }
