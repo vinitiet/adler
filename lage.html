@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="stylesheets/application-ff483afb.css" rel="stylesheet" />
+    <link href="stylesheets/application-c8507d9f.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
@@ -52,8 +52,112 @@
 
 </div>
    <!-- inject layouts/_navbar.html.erb -->
-    
-    <div class="footer">
+    <div id="lage">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/projekt-blick-fae6e323.png');">
+  </div>
+
+  <div class="container">
+    <h1>Lage</h1>
+
+    <div class="intro">
+      <div class="intro-img" style="background-image: url(images/4-e87fbd34.jpg"></div>
+      <div class="intro-text">
+
+        <h2>
+          WO ES POTSDAM NOCH ZU ENTDECKEN GIBT
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quis, blanditiis explicabo iure reiciendis tenetur voluptas dolorem magnam voluptate nostrum voluptatem ut doloremque mollitia sunt voluptatum fuga expedita, doloribus aliquam ipsam quibusdam nobis delectus impedit? Dolorem voluptates commodi a, ipsa alias. Quo ipsa facere deleniti architecto commodi reprehenderit qui temporibus.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="highlight-container">
+    <h2> NEUE LIEBLINGSPLÄTZE DIREKT VOR DER TÜR</h2>
+    <div class="highlight-cards">
+      <div class="card">
+        <div class="card-img">
+          <img src="images/4-e87fbd34.jpg" alt="4" />
+        </div>
+        <div class="card-desc">
+          <h5>Freizeit</h5>
+          <p>Tolle Orte zum Entspannen</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/projekt-blick-fae6e323.png" alt="Projekt blick" />
+        </div>
+        <div class="card-desc">
+          <h5>Freizeit</h5>
+          <p>Tolle Orte zum Entspannen</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/4-e87fbd34.jpg" alt="4" />
+        </div>
+        <div class="card-desc">
+          <h5>Freizeit</h5>
+          <p>Tolle Orte zum Entspannen</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <img src="images/projekt-blick-fae6e323.png" alt="Projekt blick" />
+        </div>
+        <div class="card-desc">
+          <h5>Freizeit</h5>
+          <p>Tolle Orte zum Entspannen</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div id="map">
+
+  </div>
+
+</div>
+
+<script>
+  function initMap() {
+    const adler = {lat: 52.357985, lng: 12.985851};
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: adler
+    });
+    const marker = new google.maps.Marker({
+      position: adler,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBExqlbbBH-wlmBGEDVUCXPAUvR6rZ-b_Y&callback=initMap">
+</script>
+
+      <div class="contact">
+    <div class="number animated fadeInUp">
+    <h3>
+      JETZT TERMIN VEREINBAREN?
+    </h3>
+    <h3>
+      +49 (0) 172 312 34 89
+    </h3>
+    </div>
+    <div class="contact-infos animated fadeInUp">
+      <a href="contact.html">Kontakt</a>
+    </div>
+  </div>
+  <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fa fa-github"></i></a>
     <a href="#"><i class="fa fa-instagram"></i></a>
