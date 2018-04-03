@@ -1,0 +1,23 @@
+title: ""
+motto: 'DIE RESIDENZ ADLER IST EIN URBANES REFUGIUM,DAS WOHNEN MIT SMARTEN SERVICES, KURZEN WEGEN UND STARKER COMMUNITY VERBINDET.'
+content:
+  - title: 'Idee'
+    image: 'visualizations/4.jpg'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloremque saepe, hic, at ut eum, non nisi ex pariatur aliquam minus sit accusamus obcaecati quasi!'
+  - title: 'Areal'
+    image: 'visualizations/4.jpg'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis sint, omnis. Laudantium quidem quos veniam quas voluptate eaque voluptatum fuga mollitia quo, sunt, exercitationem saepe.'
+  - title: 'Architektur'
+    image: 'visualizations/4.jpg'
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veritatis enim unde iure quam, inventore quibusdam quo commodi ipsum aliquid, saepe, minus explicabo facere voluptas.'
+carousel:
+  - image: 'visualizations/4.jpg'
+    title: 'Retreat greets city'
+  - image: 'visualizations/4.jpg'
+    title: 'Spend time together'
+  - image: 'visualizations/4.jpg'
+    title: 'Urban meets village'
+  - image: 'visualizations/4.jpg'
+    title: 'Plenty featuring space'
+  - image: 'visualizations/4.jpg'
+    title: 'RetrA valued green heaven'

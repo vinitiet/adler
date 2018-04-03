@@ -5,6 +5,8 @@ gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-sprockets'
 gem 'middleman-deploy', git: 'https://github.com/lewagon/middleman-deploy.git'
 gem 'pry-byebug', require: true
+gem  'bourbon'
+
 
 # Assets
 gem 'font-awesome-middleman'

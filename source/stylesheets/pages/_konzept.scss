@@ -1,0 +1,53 @@
+#konzept {
+
+  .banner {
+    width: 100%;
+    height: 600px;
+  }
+
+
+  .concept {
+    width: 100%;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 48px 48px;
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .concept-content {
+    display: flex;
+    justify-content: space-between;
+
+    .block {
+      flex: 0 0 30%;
+    }
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+
+  #idee {
+    width: 100%;
+    height: 500px;
+    background-color: #bbb;
+    img {
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  #areal {
+    width: 100%;
+    height: 400px;
+    background-color: #ccc
+  }
+  #architektur {
+    width: 100%;
+    height: 400px;
+    background-color: #ddd
+  }
+}

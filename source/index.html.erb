@@ -1,23 +1,26 @@
 ---
 title: Residenz Adler
 ---
+
 <div id="home">
-  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/projekt-blick.png');">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('visualizations/projekt-blick.png') %>);">
     <div class="banner-content">
-      <h1>Residenz Adler</h1>
-      <p>Leben am See</p>
+      <h1><%= data.home.title %></h1>
+      <p><%= data.home.tagline %></p>
     </div>
   </div>
   <div class="container">
 
     <div class="intro">
       <div>
-        <h2>DIE NEUE GRÜNE WOHNOASE IM HERZEN DER STADT</h2>
+        <h2><%= data.home.intro.title %></h2>
       </div>
 
       <div class="welcome-text">
-        <h3>Willkommen in der Residenz Adler</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae molestias accusantium eum facere officia deserunt vero ipsum pariatur neque laboriosam ab reiciendis placeat fugiat expedita aspernatur cum, corporis non eos praesentium nobis blanditiis esse, maxime dicta in modi. Labore, dolorum!</p>
+        <h3><%= data.home.intro.welcome %></h3>
+        <p>
+          <%= data.home.intro.welcometext %>
+        </p>
       </div>
     </div>
   </div>
@@ -25,128 +28,47 @@ title: Residenz Adler
     <div class="container highlights">
       <div class="row">
 
-        <div class="nopadding col-xs-12 col-sm-6 col-md-4">
-          <div class="highlight">
+        <% data.home.highlights.each do |highlight| %>
 
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="highlight-text">
-              <h3> Highlight 1 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit commodi sunt itaque voluptate consequuntur deleniti illo? Ab dolorum debitis sed.</p>
-            </div>
+        <div class="nopadding col-xs-12 col-sm-6 col-md-4 highlight">
+          <div class="icon">
+            <i class="<%= highlight.icon %>"></i>
+          </div>
+          <div class="highlight-text">
+            <h3> <%= highlight.title %> </h3>
+            <p><%= highlight.description %></p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="highlight">
-
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="highlight-text">
-              <h3> Highlight 2 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum excepturi laboriosam earum aut doloremque quae ipsum rem sunt quas nobis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="highlight">
-
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="highlight-text">
-              <h3> Highlight 3 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam possimus facilis debitis, cum impedit est quos tempora repudiandae ipsa porro.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="highlight">
-
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="highlight-text">
-              <h3> Highlight 4 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aperiam officia, quaerat? Sunt quam quidem, sequi impedit modi error ducimus?</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="highlight">
-
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="highlight-text">
-              <h3> Highlight 5 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptas eum labore eos incidunt debitis ex ad, numquam, quae maiores.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="highlight">
-
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="highlight-text">
-              <h3> Highlight 6 </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero inventore dignissimos neque possimus soluta repellendus excepturi magni aperiam debitis tempore.</p>
-            </div>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>
 
-
   <div class="overall-pers">
-    <div class="pers" style="background-image: url(<%= image_path "4.jpg" %>);">
+    <div class="pers" style="background-image: url(<%= image_path "visualizations/4.jpg" %>);">
     </div>
-    <h2 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti temporibus velit. Quisquam soluta, nihil.</h2>
+    <h2 class="text-center">
+      <%= data.home.motto %>
+    </h2>
   </div>
   <div class="container">
     <div class="apart-options">
+      <% data.home.wohnangebot.each do |item| %>
+
       <div class="card">
-        <div class="card-title" style="background-image: url(<%= image_path "4.jpg" %>">
-          <h4>EFFICIENT</h4>
+        <div class="card-title" style="background-image: url(<%= image_path "visualizations/#{item.image}" %>">
+          <h4><%= item.title %></h4>
         </div>
         <ul>
-          <li>kompakte Grundrisse</li>
-          <li>functionale Flächen</li>
-          <li>Optimum für smarte Städter</li>
+          <li><%= item.arg1 %></li>
+          <li><%= item.arg2 %></li>
+          <li><%= item.arg3 %></li>
         </ul>
         <%= link_to "Zum Wohnangebot", "#" %>
       </div>
-
-      <div class="card">
-        <div class="card-title"  style="background-image: url(<%= image_path "4.jpg" %>">
-          <h4>FLEXIBLE</h4>
-        </div>
-        <ul>
-          <li>flexibel nutzbare Grundrisse</li>
-          <li>mit vielfältigen Möblierungsoptionen</li>
-          <li>Ideal der anspruchsvollen Wohnfreunde</li>
-        </ul>
-
-        <%= link_to "Zum Wohnangebot", "#" %>
-      </div>
-
-      <div class="card">
-        <div class="card-title" style="background-image: url(<%= image_path "4.jpg" %>">
-          <h4>COMFORT</h4>
-        </div>
-        <ul>
-          <li>grosszügige Grundrisse</li>
-          <li>herrschaftliche Flächen</li>
-          <li>Wahl der freiheitsliebenden Kosmopoliten</li>
-        </ul>
-        <%= link_to "Zum Wohnangebot", "#" %>
-      </div>
+      <% end %>
     </div>
   </div>
+</div>
 
-</div>
-</div>
+    <%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->

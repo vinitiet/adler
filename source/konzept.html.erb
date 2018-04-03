@@ -1,23 +1,41 @@
 ---
-title: Le Wagon - Middleman - About
+title: Residenz Adler - Konzept
 ---
 
-<div id="about">
-  <div class="about-content">
-    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
-    <ul class="list-inline">
-      <% data.users.each do |user| %>
-        <li>
-          <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
-          <% end %>
-          <p>
-            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fa fa-github"></i> <%= user.github_nickname %>
-            <% end %>
-          </p>
-        </li>
+<div id="konzept">
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('visualizations/projekt-blick.png') %>);">
+    <h1>
+      BANNER with video
+    </h1>
+  </div>
+
+  <div class="concept">
+    <h2 class="nomargin">
+      <%= data.konzept.motto %>
+    </h2>
+
+    <div class="concept-content">
+      <% data.konzept.content.each do |concept| %>
+      <div class="block">
+
+        <h3><%= concept.title.upcase %></h3>
+        <%= image_tag concept.image %>
+        <p><%= concept.description %></p>
+        <%= link_to "mehr sehen", "\##{concept.title.downcase}" %>
+      </div>
       <% end %>
-    </ul>
+
+    </div>
+  </div>
+
+  <div id="idee">
+
+
+  </div>
+  <div id="areal">
+    AREAL
+  </div>
+  <div id="architektur">
+    ARCHITEKTUR
   </div>
 </div>
