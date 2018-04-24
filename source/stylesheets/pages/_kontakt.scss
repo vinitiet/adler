@@ -1,0 +1,12 @@
+#kontakt {
+  padding: 100px 0 90px 0;
+  display: flex;
+  .information {
+    flex: 1 0 33%;
+  }
+
+  .kontaktform {
+    flex: 1 0 67%;
+  }
+
+}
