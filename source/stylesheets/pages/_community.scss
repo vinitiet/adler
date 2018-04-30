@@ -1,36 +1,6 @@
 #community {
   font-size: 14px;
 
-  .highlight-container {
-
-    width: 100%;
-    padding: 32px calc((100% - 940px) / 2);
-    background-color: $main;
-    padding-bottom: 24px;
-
-    h2 {
-      text-align: center;
-      margin: 0;
-      color: $white;
-      margin: 64px auto;
-    }
-
-    .highlight-cards {
-
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-      @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
-      }
-      @media (min-width: 992px) {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-    }
-
-  }
-
   #map {
     height: 400px;
   }
