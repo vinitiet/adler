@@ -9,10 +9,23 @@
   background-color: white;
 }
 
+.intro {
+  padding: 2em;
+  display: grid;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .intro-left {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .apart-options {
   padding-bottom: 24px;
   display: grid;
-  grid-template-columns: 1fr;
   grid-gap: 2rem;
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
@@ -28,3 +41,4 @@ li {
   font-size: 14px;
 
 }
+

@@ -13,18 +13,23 @@ title: Residenz Adler - Konzept
     <h2 class="nomargin">
       <%= data.konzept.motto %>
     </h2>
+    <div class="container">
+      <div class="row">
 
-    <div class="concept-content">
-      <% data.konzept.content.each do |concept| %>
-      <div class="block">
 
-        <h3><%= concept.title.upcase %></h3>
-        <%= image_tag concept.image %>
-        <p><%= concept.description %></p>
-        <%= link_to "mehr sehen", "\##{concept.title.downcase}" %>
+        <div class="concept-content">
+          <% data.konzept.content.each do |concept| %>
+          <div class="block col-xs-12 col-md-6 col-lg-4">
+
+            <h3><%= concept.title.upcase %></h3>
+            <%= image_tag concept.image %>
+            <p><%= concept.description %></p>
+            <%= link_to "mehr sehen", "\##{concept.title.downcase}" %>
+          </div>
+          <% end %>
+
+        </div>
       </div>
-      <% end %>
-
     </div>
   </div>
 

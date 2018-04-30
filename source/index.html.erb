@@ -11,12 +11,13 @@ title: Residenz Adler
   </div>
   <div class="container">
 
-    <div class="intro">
-      <div>
+  </div>
+  <div class="intro">
+    <div class="intro-left">
         <h2><%= data.home.intro.title %></h2>
       </div>
 
-      <div class="welcome-text">
+      <div class="intro-right">
         <h3><%= data.home.intro.welcome %></h3>
         <p>
           <%= data.home.intro.welcometext %>
@@ -45,7 +46,7 @@ title: Residenz Adler
   </div>
 
   <div class="overall-pers">
-    <div class="pers" style="background-image: url(<%= image_path "visualizations/4.jpg" %>);">
+    <div class="pers" style="background-image: url(<%= image_path "visualizations/project-view1.jpg" %>);">
     </div>
     <h2 class="text-center">
       <%= data.home.motto %>
@@ -75,4 +76,4 @@ title: Residenz Adler
 </iframe>
 
 
-    <%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->
+<%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->

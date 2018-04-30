@@ -1,9 +1,9 @@
-desc: "Sie haben Fragen oder wünschen weitere Informationen zu den Wohnungen? Dann füllen Sie bitte das neben stehende Formular aus und klicken Sie auf "senden". Unsere Berater Max Musterman und Maria Musterfrau werden sich schnellstmöglich mit Ihnen in Verbindung setzen."
-title1: "WIR STEHEN IHNEN JEDERZEIT GERN ZUR VERFÜGUNG!"
+desc: 'Sie haben Fragen oder wünschen weitere Informationen zu den Wohnungen? Dann füllen Sie bitte das neben stehende Formular aus und klicken Sie auf "senden". Unsere Berater Max Musterman und Maria Musterfrau werden sich schnellstmöglich mit Ihnen in Verbindung setzen.'
+title1: 'WIR STEHEN IHNEN JEDERZEIT GERN ZUR VERFÜGUNG!'
 descr2:
-  - item: "Vertrieb"
-  - item: "Rousseau Park GmbH"
-  - item: "Leipziger Platz 9"
-  - item: "10117 Berlin"
-  - item: "Tel. 12 34 56 789"
-image: "logo.jpg"
+  - item: 'Vertrieb'
+  - item: 'Rousseau Park GmbH'
+  - item: 'Leipziger Platz 9'
+  - item: '10117 Berlin'
+  - item: 'Tel. 12 34 56 789'
+image: 'logo.jpg'

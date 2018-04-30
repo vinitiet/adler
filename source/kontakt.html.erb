@@ -3,21 +3,31 @@
 </div>
 <%= partial "layouts/contact" %>
 
-<div class="kontakt">
+<div id="kontakt">
   <div class="information">
     <h2>
       Information
     </h2>
     <p>
-      <%= data.home.desc %>
+      <%= data.kontakt.desc %>
     </p>
     <h3>
+      <%= data.kontakt.title1 %>
     </h3>
+
+      <% data.kontakt.descr2.each do |line| %>
+      <p>
+        <%= line.item %>
+      </p>
+      <% end %>
+
   </div>
   <div class="kontaktform">
 <%= partial "layouts/contact_form" %>
-<%= partial "layouts/apartdetails_form" %>
 
   </div>
+<div class="apartdetails">
+<%= partial "layouts/apartdetails_form" %>
 
+</div>
 </div>

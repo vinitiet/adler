@@ -28,7 +28,6 @@
 
 
     .footer {
-      max-width: 1256px;
       margin: 0 auto;
       color: #939598;
       padding: 80px 40px;
@@ -44,34 +43,17 @@
         line-height: 25px;
         margin: 0;
       }
-
-      .footer-row {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      }
-
-      .footer-info {
-      flex: 1 0 67%;
-      padding-right: 35px;
-      }
-
     }
-    .footer-links {
-      flex: 0 1 33%;
-      display: flex;
-      flex-direction: column;
-    }
+
     .footer-links a {
       text-decoration: none;
       color: #939598;
       font-size: 14px;
       line-height: 25px;
       padding: 0px 10px;
-    }
-    .footer-links a:hover {
-      font-weight: bold;
+      &:hover {
+        font-weight: bold;
+      }
     }
     .footer .fa-heart {
       color: #D23333;

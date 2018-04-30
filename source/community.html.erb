@@ -8,17 +8,17 @@ title: Residenz Adler - Lage
   <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path("visualizations/projekt-blick.png") %>);">
   </div>
 
-  <div class="container">
     <h1><%= data.community.title %></h1>
 
     <div class="intro">
-      <div class="intro-img" style="background-image: url(<%= image_path "visualizations/project-view5.jpg" %>">
+      <div class="intro-left">
+
+        <%= image_tag "visualizations/project-view5.jpg" %>
       </div>
-      <div class="intro-text">
+      <div class="intro-right">
         <h2><%= data.community.intro.title %></h2>
         <p><%= data.community.intro.description %></p>
       </div>
-    </div>
   </div>
 
   <div class="highlight-container">

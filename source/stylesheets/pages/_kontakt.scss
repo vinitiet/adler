@@ -1,12 +1,7 @@
 #kontakt {
   padding: 100px 0 90px 0;
-  display: flex;
-  .information {
-    flex: 1 0 33%;
-  }
-
-  .kontaktform {
-    flex: 1 0 67%;
-  }
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "info kontakt apartdetails";
+  grid-gap: 1rem;
 }
