@@ -1,7 +1,19 @@
 #kontakt {
   padding: 100px 0 90px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "info kontakt apartdetails";
-  grid-gap: 1rem;
-}
+  grid-gap: 2rem;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .information {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;    }
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+  }

@@ -1,4 +1,8 @@
-.nomargin {
+#map {
+    height: 60vh;
+}
+
+  .nomargin {
   margin: 0;
 }
 
@@ -37,11 +41,9 @@
 }
 
   .highlight-container {
-
     width: 100%;
-    padding: 32px 1em;
+    padding: 24px 1em;
     background-color: $main;
-    padding-bottom: 24px;
 
     h2 {
       text-align: center;
@@ -53,7 +55,6 @@
     .highlight-cards {
 
       display: grid;
-      grid-template-columns: 1fr;
       grid-gap: 2rem;
       @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
