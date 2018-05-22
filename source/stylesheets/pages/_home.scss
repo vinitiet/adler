@@ -1,5 +1,5 @@
 #home {
-    font-size: 14px;
+  font-size: $font-size-base;
 
   .banner {
     height: calc(100vh - 70px);
@@ -21,8 +21,6 @@
   }
 
   .intro {
-    padding: 40px 0px;
-    display: flex;
     color: black;
   }
 
@@ -57,19 +55,6 @@
     }
   }
 
-  .apart-options {
-    padding-bottom: 24px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (min-width: 992px) {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-  }
 .video {
   width: 100vw;
 }

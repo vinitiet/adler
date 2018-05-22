@@ -2,7 +2,6 @@
   <!-- Logo -->
 
 
-  <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <a href="/" class="navbar-wagon-brand">
       <img src="images/logo.png" alt="logo">
@@ -29,9 +28,13 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messagese</a></li>
+      <li><%= link_to 'Home', 'index.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to 'Lage', 'lage.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to 'Konzept', 'konzept.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to 'Wohnen', 'wohnen.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to 'Community', 'community.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to 'Kontakt', 'kontakt.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
+      <li><%= link_to 'Bauherr', 'bauherr.html', class:"navbar-wagon-item navbar-wagon-link" %></li>
       </ul>
     </div>
   </div>

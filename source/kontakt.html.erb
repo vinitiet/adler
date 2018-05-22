@@ -1,4 +1,33 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('visualizations/projekt-blick.png') %>);">
 <h1>Kontakt</h1>
 </div>
-<%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->
+<%= partial "layouts/contact" %>
+
+<div id="kontakt">
+  <div class="information">
+    <h2>
+      Information
+    </h2>
+    <p>
+      <%= data.kontakt.desc %>
+    </p>
+    <h3>
+      <%= data.kontakt.title1 %>
+    </h3>
+
+      <% data.kontakt.descr2.each do |line| %>
+      <p>
+        <%= line.item %>
+      </p>
+      <% end %>
+
+  </div>
+  <div class="kontaktform">
+<%= partial "layouts/contact_form" %>
+
+  </div>
+<div class="apartdetails">
+<%= partial "layouts/apartdetails_form" %>
+
+</div>
+</div>

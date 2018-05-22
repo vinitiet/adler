@@ -11,12 +11,13 @@ title: Residenz Adler
   </div>
   <div class="container">
 
-    <div class="intro">
-      <div>
+  </div>
+  <div class="intro">
+    <div class="intro-left">
         <h2><%= data.home.intro.title %></h2>
       </div>
 
-      <div class="welcome-text">
+      <div class="intro-right">
         <h3><%= data.home.intro.welcome %></h3>
         <p>
           <%= data.home.intro.welcometext %>
@@ -45,7 +46,7 @@ title: Residenz Adler
   </div>
 
   <div class="overall-pers">
-    <div class="pers" style="background-image: url(<%= image_path "visualizations/4.jpg" %>);">
+    <div class="pers" style="background-image: url(<%= image_path "visualizations/project-view1.jpg" %>);">
     </div>
     <h2 class="text-center">
       <%= data.home.motto %>
@@ -71,25 +72,5 @@ title: Residenz Adler
   </div>
 </div>
 
-<iframe class="video" width="100%" height="316" src="https://youtu.be/ub4SyCv8_lE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
 
-<iframe class="video" width="100%" height="316" src="https://youtu.be/f04lnQHeiQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-
-<iframe class="video" width="100%" height="316" src="https://youtu.be/AR_wig_D4WI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-
-<iframe class="video" width="100%" height="316" src="https://youtu.be/iuJKNvdmMjo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-
-<iframe class="video" width="100%" height="316" src="https://youtu.be/MVa7eF36Zdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-
-<iframe class="video" width="100%" height="316" src="https://youtu.be/WGtMoZrizsM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-
-<iframe class="video" width="100%" height="316" src="https://youtu.be/iKpGLnNXIEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-</iframe>
-
-    <%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->
+<%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->

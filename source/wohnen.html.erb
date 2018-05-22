@@ -1,4 +1,36 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('visualizations/projekt-blick.png') %>);">
-<h1>Wohnen</h1>
+<div id="wohnen">
+
+
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path('visualizations/projekt-blick.png') %>);">
+    <h1>JEDES LEBEN DIE RICHTIGE FORM</h1>
+  </div>
+
+  <div class="intro-text">
+    <h2><%= data.wohnen.intro %></h2>
+  </div>
+
+
+  <div class="container">
+    <div class="apart-options">
+      <% data.home.wohnangebot.each do |item| %>
+
+      <div class="card">
+        <div class="card-title" style="background-image: url(<%= image_path "visualizations/#{item.image}" %>">
+          <h4><%= item.title %></h4>
+        </div>
+        <ul>
+          <li><%= item.arg1 %></li>
+          <li><%= item.arg2 %></li>
+          <li><%= item.arg3 %></li>
+        </ul>
+        <%= link_to "Zum Wohnangebot", "#" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+
 </div>
+
+
 <%= partial "layouts/contact" %>   <!-- inject layouts/_navbar.html.erb -->
