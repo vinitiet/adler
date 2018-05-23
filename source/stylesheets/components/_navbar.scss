@@ -1,29 +1,32 @@
 /* Main navbar */
-.navbar-wagon {
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
-    background: white;
+.navbar-adler {
+    background: #ffffff;
     transition: all 0.3s ease;
     height: 64px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 15;
     padding: 0 10px;
 }
+
+/* Top Section */
+
+.navbar-top {
+  background: #c8b670;
+}
+
+/* Bottom Section */
+.navbar-bottom {
+  height: 128px;
+  justify-content: flex-end;
+}
+
 /* Logo */
 .navbar-wagon-brand img {
   height: 50px;
-}
-
-/* Right section */
-
-.navbar-wagon-right {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
 }
 
 /* Basic navbar item */

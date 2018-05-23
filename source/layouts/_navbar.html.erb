@@ -1,11 +1,16 @@
-<div class="navbar-wagon">
-  <!-- Logo -->
-
-
+<div class="navbar-adler navbar-top">
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-    <a href="/" class="navbar-wagon-brand">
-      <img src="images/logo.png" alt="logo">
-    </a>
+     <div class="menu-right">
+      <a href="" class="navbar-wagon-item navbar-wagon-link">DE|EN</a>
+      <%= link_to 'Bauherr', 'bauherr.html', class:"navbar-wagon-item navbar-wagon-link" %>
+    </div>
+  </div>
+</div>
+<div class="navbar-adler navbar-bottom">
+
+
+  <div class="hidden-xs hidden-sm">
+
 
     <div class="menu-left">
       <%= link_to 'Home', 'index.html', class:"navbar-wagon-item navbar-wagon-link" %>
@@ -16,15 +21,10 @@
       <%= link_to 'Kontakt', 'kontakt.html', class:"navbar-wagon-item navbar-wagon-link" %>
     </div>
 
-    <div class="menu-right">
-      <%= link_to 'Bauherr', 'bauherr.html', class:"navbar-wagon-item navbar-wagon-link" %>
-      <a href="" class="navbar-wagon-item navbar-wagon-link">EN|FR</a>
-    </div>
-
   </div>
 
   <!-- Dropdown appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
+  <div class="hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
