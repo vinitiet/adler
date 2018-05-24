@@ -7,6 +7,12 @@ title: Residenz Adler
     <div class="banner-content">
       <h1><%= data.home.title %></h1>
       <p><%= data.home.tagline %></p>
+      <div class="expanding-map-container">
+        <div class="expanding-map inactive">
+          <img src="<%= image_path 'plans/map2.jpg' %>" alt="">
+        </div>
+        <button class="btn-primary"> + </button>
+      </div>
     </div>
   </div>
   <div class="container">

@@ -2,7 +2,7 @@
   font-size: $font-size-base;
 
   .banner {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 150px);
 
     color: white;
     p {
@@ -28,7 +28,7 @@
     padding-top: 24px;
     padding-bottom: 24px;
     .highlight {
-    display:flex;
+      display:flex;
 
       .icon {
         width: 60px;
@@ -55,9 +55,19 @@
     }
   }
 
-.video {
-  width: 100vw;
-}
+  .video {
+    width: 100vw;
+  }
+
+  .expanding-map-container {
+    height: 100px;
+    overflow: hidden;
+
+    // .expanding-map img {
+    //   height: 100px;
+    // }
+  }
+
 
 }
 

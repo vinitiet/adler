@@ -16,6 +16,15 @@
 
 .navbar-top {
   background: #c8b670;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  a {
+    color: white;
+    border-right: 1px solid;
+    border-color: black;
+  }
 }
 
 /* Bottom Section */
@@ -41,7 +50,7 @@
   font-weight: bold;
 }
 .navbar-wagon-link:hover {
-  color: $main;
+  // color: $main;
   text-decoration: none;
   font-weight: 200;
 }
