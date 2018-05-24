@@ -1,9 +1,18 @@
 #home {
   font-size: $font-size-base;
+  .banner.inactive {
+    height: calc(100vh - 150px);
+    overflow: hidden;
+  }
+
+  .banner.active {
+    height: 100vh;
+  }
+
 
   .banner {
-    height: calc(100vh - 150px);
-
+    position: relative;
+    // overflow: hidden;
     color: white;
     p {
       margin-top: 1.5em;
@@ -59,13 +68,17 @@
     width: 100vw;
   }
 
-  .expanding-map-container {
-    height: 100px;
-    overflow: hidden;
-
-    // .expanding-map img {
-    //   height: 100px;
-    // }
+  .expanding-map {
+    img {
+      position: absolute;
+      right: 0px;
+      top: 80%;
+    }
+    button {
+      position: absolute;
+      right: 50px;
+      bottom: 20px;
+    }
   }
 
 
