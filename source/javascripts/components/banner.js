@@ -5,8 +5,7 @@
   console.log(banner)
 
   banner_button.addEventListener("click", (event) => {
-    banner.classList.remove('inactive')
-    banner.classList.add('active')
+    banner.classList.toggle('inactive')
   });
 // };
 

@@ -1,16 +1,10 @@
 #home {
   font-size: $font-size-base;
   .banner.inactive {
-    height: calc(100vh - 150px);
     overflow: hidden;
   }
-
-  .banner.active {
-    height: 100vh;
-  }
-
-
   .banner {
+    height: calc(100vh - 192px);
     position: relative;
     // overflow: hidden;
     color: white;
@@ -73,11 +67,12 @@
       position: absolute;
       right: 0px;
       top: 80%;
+      display: block;
     }
     button {
       position: absolute;
       right: 50px;
-      bottom: 20px;
+      bottom: 4%;
     }
   }
 
